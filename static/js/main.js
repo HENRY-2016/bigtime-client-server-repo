@@ -28,33 +28,33 @@ var Alert = new CreateCustomAlertBox();
 function ShowAlertBox (){Alert.render('<center>Please turn on <br> your network <br>and <br> Try Again</center>')}
 
 
-function Load_developer () {window.location="developer.html"}
-function Load_index () 
-{
-    window.location="index.html"
-    if(!navigator.onLine) {ShowAlertBox ()}
-    else if (navigator.onLine) {window.location="index.html"}
+function Load_Developer_View () {window.location="developer.html"}
+// function Load_index () 
+// {
+//     window.location="index.html"
+//     if(!navigator.onLine) {ShowAlertBox ()}
+//     else if (navigator.onLine) {window.location="index.html"}
 
-}
+// }
 function Load_Boxes_view () 
 {
     // window.location="boxes.html";
-    window.location="index.html";    
-    // if(!navigator.onLine) {ShowAlertBox ()}
-    // else if(navigator.onLine) {window.location="boxes.html";}
+    // window.location="index.html";    
+    if(!navigator.onLine) {ShowAlertBox ()}
+    else if(navigator.onLine) {window.location="index.html";}
 
 }
 function Load_Baskets_View () 
 {
-    window.location="baskets.html"
-    // if(!navigator.onLine) {ShowAlertBox ()}
-    // else if(navigator.onLine) {window.location="boxes.html";}
+    // window.location="baskets.html"
+    if(!navigator.onLine) {ShowAlertBox ()}
+    else if(navigator.onLine) {window.location="boxes.html";}
 }
 function Load_Funeral_View () 
 {
-    window.location="funeral.html"
-    // if(!navigator.onLine) {ShowAlertBox ()}
-    // else if(navigator.onLine) {window.location="funeral.html";}
+    // window.location="funeral.html"
+    if(!navigator.onLine) {ShowAlertBox ()}
+    else if(navigator.onLine) {window.location="funeral.html";}
 }
 
 function Load_Bouquets_Hand_View () 
